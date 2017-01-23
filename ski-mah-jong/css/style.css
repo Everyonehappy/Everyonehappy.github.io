@@ -1,0 +1,158 @@
+/*-----common-----*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+
+/*-----container-----*/
+
+.container {
+  background: #f9f9f9;
+}
+
+/*-----header-----*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(0,0,0,.8);
+  color: rgb(255,255,255);
+  z-index: 1;
+}
+.heading {
+  position: relative;
+  float: left;
+  width: 400px;
+  margin-left: 75px;
+  line-height: 70px;
+  font-size: 30px;
+  font-family: "Sawarabi Mincho";
+  font-weight: 400;
+}
+.heading::before{
+  content: url('../img/mj-head.png');
+  position: absolute;
+  left: -75px;
+}
+.nav {
+  float: right;
+  font-family: cursive;
+}
+.nav-list-item {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  width: 150px;
+  line-height: 70px;
+  font-size: 20px;
+}
+
+/*-----topview-----*/
+
+.topview {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/topview.jpg);
+  background-size: cover;
+}
+.topview-heading {
+  height: 100%;
+  padding: 300px 0 0 200px;
+  font-size: 80px;
+  font-family: 'Sawarabi Mincho';
+  font-weight: 400;
+  color: #222;
+  background: rgba(255,255,255,.5);
+}
+.font {
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+/*-----main-----*/
+
+.main {
+  width: 1024px;
+  margin: 0px auto;
+  background: #fff;
+  color: #555;
+  font-family: cursive, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  text-align: center;
+}
+
+/*-----mission-----*/
+
+.mission {
+  position: relative;
+  height: 100vh;
+  padding: 50px 0;
+  background: rgba(240,240,240,.8);
+}
+.mission-heading {
+  padding: 30px 0;
+  font-size: 40px;
+}
+.mission-text {
+  line-height: 50px;
+}
+.name {
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+  font-size: 13px;
+}
+
+/*-----member-----*/
+
+.member {
+  padding: 50px 0;
+}
+.member-heading {
+  padding: 30px 0;
+  font-size: 40px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.member-intro {
+  width: 50%;
+  margin-bottom: 30px;
+}
+.member-intro-heading {
+  padding: 20px;
+}
+.member-intro-img {
+  width: 270px;
+  height: 270px;
+}
+.member-intro-text {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/*----grade-----*/
+
+.grade-heading {
+  padding: 30px 0;
+  font-size: 40px;
+}
